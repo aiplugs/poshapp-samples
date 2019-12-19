@@ -1,0 +1,94 @@
+﻿{
+  "Scripts": [
+    {
+      "displayName": "📚 リスト",
+      "group": null,
+      "detail": "Default:Detail-Item",
+      "actions": [
+        "Default:Action1",
+        "Default:Action2"
+      ],
+      "id": "List-Items",
+      "type": "List",
+      "path": "List-Items.ps1"
+    },
+    {
+      "displayName": null,
+      "actions": [
+        "Default:Action3"
+      ],
+      "id": "Detail-Item",
+      "type": "Detail",
+      "path": "Detail-Item.ps1"
+    },
+    {
+      "displayName": "📙 シングル",
+      "group": null,
+      "actions": [
+        "Default:Action3"
+      ],
+      "id": "Single-Item",
+      "type": "Singleton",
+      "path": "Single-Item.ps1"
+    },
+    {
+      "displayName": "🚀 アクション1",
+      "id": "Action1",
+      "type": "Action",
+      "path": "Action1.ps1"
+    },
+    {
+      "displayName": "🔥 アクション2",
+      "id": "Action2",
+      "type": "Action",
+      "path": "Action2.ps1"
+    },
+    {
+      "displayName": "⚡ アクション3",
+      "id": "Action3",
+      "type": "Action",
+      "path": "Action3.ps1"
+    },
+    {
+      "displayName": null,
+      "group": "UI",
+      "actions": [],
+      "id": "Do-Progress",
+      "type": "Singleton",
+      "path": "Do-Progress.ps1"
+    },
+    {
+      "displayName": null,
+      "group": "UI",
+      "actions": [],
+      "id": "Do-Choice",
+      "type": "Singleton",
+      "path": "Do-Choice.ps1"
+    },
+    {
+      "displayName": null,
+      "group": "UI",
+      "actions": [],
+      "id": "Do-Prompt",
+      "type": "Singleton",
+      "path": "Do-Prompt.ps1"
+    },
+    {
+      "displayName": null,
+      "group": "UI",
+      "actions": [],
+      "id": "Do-Credential",
+      "type": "Singleton",
+      "path": "Do-Credential.ps1"
+    },
+    {
+      "displayName": "🌏 サンプル",
+      "group": null,
+      "detail": null,
+      "actions": [],
+      "id": "Sample",
+      "type": "List",
+      "path": "Sample.ps1"
+    }
+  ]
+}

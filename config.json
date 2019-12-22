@@ -5,8 +5,8 @@
       "group": null,
       "detail": "Default:Detail-Item",
       "actions": [
-        "Default:Action1",
-        "Default:Action2"
+        "Action1",
+        "Action2"
       ],
       "id": "List-Items",
       "type": "List",
@@ -15,7 +15,7 @@
     {
       "displayName": null,
       "actions": [
-        "Default:Action3"
+        "Action3"
       ],
       "id": "Detail-Item",
       "type": "Detail",
@@ -25,7 +25,7 @@
       "displayName": "📙 シングル",
       "group": null,
       "actions": [
-        "Default:Action3"
+        "Action3"
       ],
       "id": "Single-Item",
       "type": "Singleton",

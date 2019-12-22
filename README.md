@@ -1,2 +1,2 @@
 # poshapp-samples
-samples scripts for poshapp.
+samples scripts for poshapp..

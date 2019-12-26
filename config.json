@@ -3,7 +3,7 @@
     {
       "displayName": "📚 リスト",
       "group": null,
-      "detail": "Default:Detail-Item",
+      "detail": "Detail-Item",
       "actions": [
         "Action1",
         "Action2"

@@ -15,13 +15,15 @@ function Format-Attributes($Attributes)
 	$mapping = @{
 		Directory = "📁";
 		Archive = "📄";
+		"ReadOnly, Directory" = "📁";
+		"ReadOnly, Directory, Archive, ReparsePoint" = "🌍";
 	}
 	return $mapping[$key];
 }
 
-(Get-ChildItem).Count
+(Get-ChildItem -Path $Home).Count
 
-Get-ChildItem | Select -Skip ($Page * $PageSize) -First $PageSize | %{
+Get-ChildItem -Path $Home | Select -Skip ($Page * $PageSize) -First $PageSize | %{
 	[ordered]@{
 		" " = Format-Attributes $_.Attributes;
 		"💬 Name" = $_.Name;

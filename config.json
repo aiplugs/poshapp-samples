@@ -1,7 +1,7 @@
 ﻿{
   "Scripts": [
     {
-      "displayName": "📚 リスト",
+      "displayName": "📚 List",
       "group": null,
       "detail": "Detail-Item",
       "actions": [
@@ -22,7 +22,7 @@
       "path": "Detail-Item.ps1"
     },
     {
-      "displayName": "📙 シングル",
+      "displayName": "📙 Single",
       "group": null,
       "actions": [
         "Action3"
@@ -32,19 +32,19 @@
       "path": "Single-Item.ps1"
     },
     {
-      "displayName": "🚀 アクション1",
+      "displayName": "🚀 Action 1",
       "id": "Action1",
       "type": "Action",
       "path": "Action1.ps1"
     },
     {
-      "displayName": "🔥 アクション2",
+      "displayName": "🔥 Action 2",
       "id": "Action2",
       "type": "Action",
       "path": "Action2.ps1"
     },
     {
-      "displayName": "⚡ アクション3",
+      "displayName": "⚡ Action 3",
       "id": "Action3",
       "type": "Action",
       "path": "Action3.ps1"
@@ -82,13 +82,20 @@
       "path": "Do-Credential.ps1"
     },
     {
-      "displayName": "🌏 サンプル",
-      "group": null,
-      "detail": null,
+      "displayName": null,
+      "group": "OData",
+      "detail": "Get-ProductDetail",
       "actions": [],
-      "id": "Sample",
+      "id": "Get-Products",
       "type": "List",
-      "path": "Sample.ps1"
+      "path": "Get-Products.ps1"
+    },
+    {
+      "displayName": null,
+      "actions": [],
+      "id": "Get-ProductDetail",
+      "type": "Detail",
+      "path": "Get-ProductDetail.ps1"
     }
   ]
 }

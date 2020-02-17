@@ -3,7 +3,7 @@ $cClass = "System.Collections.ObjectModel.Collection"
 
 $descriptions = New-Object "$cClass``1[$dClass]"
 
-$description = New-Object $dclass "Text"
+$description = New-Object $dclass "Path"
 $description.SetParameterType([System.String])
 $descriptions.Add($description)
 

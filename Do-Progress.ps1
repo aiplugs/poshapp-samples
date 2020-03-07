@@ -1,10 +1,10 @@
-$activity = "プログレスバーテスト"
+$activity = "Progress bar sample"
  
-$status = "進捗状況"
+$status = "Status"
  
 for($cnt = 0; $cnt -le 100; $cnt++)
 {
-    Write-Progress $activity $status -PercentComplete $cnt -CurrentOperation "$cnt % 完了"
+    Write-Progress $activity $status -PercentComplete $cnt -CurrentOperation "$cnt %"
  
     Start-Sleep -Milliseconds 50
 }

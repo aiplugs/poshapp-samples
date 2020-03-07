@@ -1,24 +1,21 @@
-$title = "確認"
-$message = @"
-この操作を実行しますか?
-対象 "C:\demo\PromptForChoice\hoge.txt" に対して操作 "ファイルの削除" を実行しています。
-"@
+$title = "Confirm"
+$message = "Are you sure you want to proceed?"
 
 $tChoiceDescription = "System.Management.Automation.Host.ChoiceDescription"
 $options = @(
-    New-Object $tChoiceDescription ("はい(&Y)",       "操作の次のステップのみを続行します。")
-    New-Object $tChoiceDescription ("すべて続行(&A)", "操作のすべてのステップを続行します。")
-    New-Object $tChoiceDescription ("いいえ(&N)",     "この操作をスキップし、次の操作に進みます。")
-    New-Object $tChoiceDescription ("すべて無視(&L)", "この操作および後続のすべての操作をスキップします。")
-    New-Object $tChoiceDescription ("中断(&S)",        "現在のコマンドを中断し、コマンドプロンプトに戻ります。")
+    New-Object $tChoiceDescription ("Yes(&Y)",        "Continue with only the next step of the operation.")
+    New-Object $tChoiceDescription ("Yes to All(&A)", "Continue with all the steps of the operation.")
+    New-Object $tChoiceDescription ("No(&N)",         "Skip this operation and proceed with the next operation.")
+    New-Object $tChoiceDescription ("No to All(&L)",  "Skip this operation and all subsequent operations.")
+    New-Object $tChoiceDescription ("Suspend(&S)",    "Pause the current pipeline and return to the command prompt.")
 )
 
 $result = $host.ui.PromptForChoice($title, $message, $options, 0)
 switch ($result)
 {
-    0 {"「はい」が選ばれました。"; break}
-    1 {"「すべて続行」が選ばれました。"; break}
-    2 {"「いいえ」が選ばれました。"; break}
-    3 {"「すべて無視」が選ばれました。"; break}
-    4 {"「中断」が選ばれました。"; break}
+    0 { "'Yes' is selected";        break }
+    1 { "'Yes to All' is selected"; break }
+    2 { "'No' is selected";         break }
+    3 { "'No to All' is selected";  break }
+    4 { "'Suspend' is selected";    break }
 }

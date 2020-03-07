@@ -84,18 +84,34 @@
     {
       "displayName": null,
       "group": "OData",
-      "detail": "Get-ProductDetail",
+      "detail": "Get-OrderDetails",
       "actions": [],
-      "id": "Get-Products",
+      "id": "Get-Orders",
       "type": "List",
-      "path": "Get-Products.ps1"
+      "path": "Get-Orders.ps1"
     },
     {
       "displayName": null,
       "actions": [],
-      "id": "Get-ProductDetail",
+      "id": "Get-OrderDetails",
       "type": "Detail",
-      "path": "Get-ProductDetail.ps1"
+      "path": "Get-OrderDetails.ps1"
+    },
+    {
+      "displayName": "Hello HTML",
+      "group": "HTML",
+      "actions": [],
+      "id": "Render-HTML",
+      "type": "Singleton",
+      "path": "Render-HTML.ps1"
+    },
+    {
+      "displayName": null,
+      "group": "HTML",
+      "actions": [],
+      "id": "Render-Graph",
+      "type": "Singleton",
+      "path": "Render-Graph.ps1"
     }
   ]
 }

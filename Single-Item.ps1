@@ -4,7 +4,7 @@ param(
 
 $String
 
-"Hello, World!!"
+"Hello, World!"
 
 123
 

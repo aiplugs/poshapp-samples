@@ -23,6 +23,9 @@ $description = New-Object $dclass "Path"
 $description.SetParameterType([System.String])
 $descriptions.Add($description)
 
+$description = New-Object $dclass "Flag"
+$description.SetParameterType([System.Boolean])
+$descriptions.Add($description)
 
 $caption = "Prompt" 
 $message = "Please input field" 

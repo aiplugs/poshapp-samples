@@ -4,7 +4,6 @@ param (
     $InputObject
 )
 process {
-    Install-Module -Name PSHTML
     $outfile = "$Home\out.txt"
     "Action1 Outputs" > $outfile
     foreach ($o in $InputObject) 

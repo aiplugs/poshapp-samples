@@ -1,5 +1,5 @@
 if (-not (Get-Module -ListAvailable -Name PSHTML)) {
-    Install-Module -Name PSHTML
+    Install-Module -Name PSHTML -Scope CurrentUser
     Import-Module -Name PSHTML
 }
 

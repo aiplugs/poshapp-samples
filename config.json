@@ -112,6 +112,22 @@
       "id": "Render-Graph",
       "type": "Singleton",
       "path": "Render-Graph.ps1"
+    },
+    {
+      "displayName": null,
+      "group": "Secret",
+      "actions": [],
+      "id": "LoadStore-Secret",
+      "type": "Singleton",
+      "path": "LoadStore-Secret.ps1"
+    },
+    {
+      "displayName": "",
+      "group": "UI",
+      "actions": [],
+      "id": "Do-ReadHost",
+      "type": "Singleton",
+      "path": "Do-ReadHost.ps1"
     }
   ]
 }

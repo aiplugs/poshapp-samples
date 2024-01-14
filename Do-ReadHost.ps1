@@ -1,0 +1,2 @@
+$msg = Read-Host
+$msg
